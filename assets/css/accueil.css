@@ -1,0 +1,801 @@
+/* ----------------------------- GENERAL ---------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-color: transparent transparent;
+  /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+.co {
+  margin-left: 100px;
+}
+
+body {
+  background-image: url("../RESSOURCES/bgg.jpg");
+}
+
+/*------------------------------- HEADER--------------------------------------------- */
+
+.header {
+  width: 100%;
+  height: 5em;
+  background: black;
+  /* Pour que .menudeux utilise les positions relatives à ce conteneur */
+  overflow-x: hidden;
+  transition: 1s ease-out;
+  overflow: hidden;
+}
+
+header .navbar-brand {
+  width: 153px;
+  height: 49px;
+}
+
+.buttonproun {
+  margin: auto;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #4285f4;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #4285f4;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin: -680px 1170px;
+}
+
+.buttonproun:hover {
+  background-color: #C00A27;
+  border-color: #3b79c8;
+}
+
+/* Style au clic */
+.buttonproun:active {
+  background-color: #3367c4;
+  border-color: #3367c4;
+}
+
+.buttonpro:hover {
+  background-color: #C00A27;
+  border-color: #3b79c8;
+}
+
+/* Style au clic */
+.buttonpro:active {
+  background-color: #3367c4;
+  border-color: #3367c4;
+}
+
+.buttonpro {
+  margin: auto;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #4285f4;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #4285f4;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin: -680px 600px;
+
+}
+
+#Logo {
+  width: 153px;
+  height: 49px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 27px;
+  left: 7%;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+#navlink:active {
+  background-color: #3367c4;
+}
+
+#pop li a:hover {
+  color: #3e0610;
+  box-shadow: 0 1px 1px black;
+  padding: 5px;
+
+}
+
+.navdeux {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+
+}
+
+.menudeux {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background-color: #C00A27;
+  width: 20%;
+  padding: 5% 5% 30px 5%;
+  border-radius: 20px;
+  transform: translateX(500px);
+  transition: 1s ease-out;
+  position: absolute;
+}
+
+.menudeux li {
+  text-decoration: none;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 6px;
+  list-style: none;
+}
+
+/* Style du conteneur du menu burger */
+.menu-wrapper {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+  top: 24px;
+  left: 95%;
+}
+
+/* Style de l'icône du menu burger (les trois lignes) */
+.burger-icon .line {
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+  /* Vous pouvez changer la couleur ici */
+  margin: auto;
+  margin-top: 6px;
+}
+
+#acc-bg {
+  width: 100%;
+}
+
+#bgaccueil {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+
+/* ----------------------------- Promos ---------------------------------*/
+.titre1 {
+  font-family: 'Racing Sans One', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  background-color: #C00A27;
+  height: 200px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 20px;
+  padding-top: 100px;
+  box-shadow: 0 5px 10px black;
+}
+
+.jours {
+  font-family: 'Dancing Script';
+  font-size: 1em;
+  color: white;
+}
+
+.promotexte {
+  color: white;
+  font-size: 0.2rem;
+  line-height: 1;
+  /* Valeur de l'interligne */
+}
+
+.prix {
+  color: #FFCD02;
+  font-size: 1em;
+}
+
+span {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.container-promo {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.btnch {
+  background-color: #C00A27;
+  color: #efefef;
+}
+
+/* ----------------------------------------------------------------------------PROMO1 ---------------------------*/
+
+.promoVert {
+  width: 35%;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  /* Masque le contenu qui dépasse */
+  border-radius: 30px;
+  box-shadow: 0 5px 10px black;
+}
+
+;
+
+.txtpromo1 {
+  background-color: white;
+}
+
+#imgpro1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Imgpromo1 img {
+  position: absolute;
+  bottom: 100px;
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  overflow: hidden;
+}
+
+.posjj {
+  font-size: 4em;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.pospp {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.8em;
+
+}
+
+.posprr {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 5em;
+
+}
+
+.buttposs {
+  position: absolute;
+  bottom: 35%;
+}
+
+/* ----------------------------- PROMOS2 ---------------------------------*/
+
+
+.PromoRouge {
+  width: 35%;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px black
+}
+
+#imgpro2 {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgpro2 img {
+  width: 180%;
+  position: absolute;
+  bottom: 100px;
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  overflow: hidden;
+}
+
+/*positions*/
+
+.pos1 {
+  font-size: 4em;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+}
+
+.posj {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4em;
+}
+
+.posp {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3em;
+}
+
+.pospr {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 2.5em;
+}
+
+.pospr span {
+  font-size: 2em;
+}
+
+.buttpos {
+  position: absolute;
+  bottom: 35%;
+}
+
+/**********************************************************NOS PIZZA */
+
+.containerNospizzas {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+
+.nosPizza {
+  font-family: 'Racing Sans One', 'Arial Narrow', Arial, sans-serif;
+  color: #C00A27;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 115px;
+}
+
+.container-nav2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.b {
+
+  background-color: transparent;
+  /* Fond transparent */
+  color: rgb(75, 75, 75);
+  /* Couleur de la bordure */
+  padding: 10px 20px;
+  /* Marge intérieure pour l'espacement */
+  border-radius: 35px;
+  /* Bordure arrondie */
+  cursor: pointer;
+  /* Curseur en forme de main au survol */
+  font-weight: bolder;
+  font-size: 1em;
+  margin: 20px;
+}
+
+/* ----------------------------- ARTICLES ---------------------------------*/
+
+#possibliities {
+
+  border-radius: 20px;
+  height: 1700px;
+}
+
+.wrapper {
+  margin-top: 200px;
+  width: 70%;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-bottom: 0px;
+}
+
+#possibliities article {
+  width: 40%;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 100px;
+  box-shadow: 0 5px 10px black
+}
+
+.overlay {
+  margin-top: 300px;
+  width: 96%;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-left: 12px;
+}
+
+.Npizz {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  color: white;
+
+}
+
+.txtpiuzz {
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 25px;
+  font-size: 18;
+}
+
+.prixpuizz {
+  color: #feffd2;
+  font-weight: bolder;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px;
+  font-size: 3em;
+  margin-left: 65%;
+
+}
+
+.btnpuz {
+  width: 94%;
+  text-align: center;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: #C00A27;
+  /* Fond transparent */
+  color: white;
+  /* Couleur de la bordure */
+  padding: 10px 20px;
+  /* Marge intérieure pour l'espacement */
+  border-radius: 35px;
+  /* Bordure arrondie */
+  cursor: pointer;
+  /* Curseur en forme de main au survol */
+  font-weight: bolder;
+  font-size: 1em;
+  position: absolute;
+  left: -8px;
+  bottom: -50px;
+}
+
+/* ----------------------------- Carte de fidelité ---------------------------------*/
+
+
+
+.Lacdf {
+  border: rgb(155, 23, 23) solid 7px;
+  border-radius: 20px;
+}
+
+.backbtnc {
+  width: 60%;
+  height: 40px;
+  background: linear-gradient(45deg, #d6586d, #76f0ad, #ff6a82, #7ee9ae);
+  position: absolute;
+  bottom: -30%;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.btncdf {
+  font-family: 'Dancing Script';
+  font-size: 2em;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#cdf article {
+  width: 100%;
+  height: 100%;
+  background-image: url(../RESSOURCES/Loyalty\ 1.png);
+  background-position: 45% 5%;
+  background-repeat: no-repeat;
+  background-size: 150% 150%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* -----------------------------------MAPS----------------------- */
+
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  filter: invert(100%);
+  z-index: 2;
+}
+
+#formu {
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  width: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  background-color: #f1fff7;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+
+}
+
+#formu div {
+  margin: auto;
+  margin-top: 7px;
+}
+
+/* FORMULAIRE MAIN */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  /* Couleur de fond du corps, changez selon vos préférences */
+}
+
+.formuilaire {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  /* Couleur de fond du formulaire, changez selon vos préférences */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Ombre légère */
+}
+
+.formuilaire label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.formuilaire textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  /* Couleur de la bordure, changez selon vos préférences */
+  border-radius: 4px;
+
+}
+
+.in {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  /* Couleur de la bordure, changez selon vos préférences */
+  border-radius: 4px;
+}
+
+#Envoye {
+  background-color: #4caf50;
+  /* Couleur de fond du bouton, changez selon vos préférences */
+  color: #fff;
+  /* Couleur du texte, changez selon vos préférences */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#Envoye:hover {
+  background-color: #45a049;
+  /* Couleur de fond au survol, changez selon vos préférences */
+}
+
+
+#SocialMedia {
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #C00A27;
+  /* Pour aligner les éléments en parallèle */
+}
+#cdf {
+  margin: 200px 15%;
+  width: 30%;
+  height: 250px;
+  border-radius: 15%;
+  position: relative;
+}
+.Lacdf,
+.maps {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .Lacdf,
+  .maps {
+    width: 100%;
+    /* Sur les écrans plus petits, utilisez toute la largeur */
+  }
+}
+
+/*---------------------------------- icones rs */
+
+.cb {
+  margin-left: 200px;
+}
+
+.ttt {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'poppins';
+
+}
+
+#end {
+  height: 400px;
+  width: 100%;
+  background-color: #2C2C2C;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+
+.thinstxt {
+  font-weight: 100;
+  /* ou "lighter" */
+  font-family: 'poppins';
+
+}
+
+.ajouterpizzas {
+  margin-left: 35%;
+  margin-top: 10%;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  color: white;
+}
+
+.ajouterpizzas .submit {
+  margin-top: 20px;
+  margin-left: 35%;
+}
+
+/*********************************** FENETRE AJOUTER PIZZA****** */
+/* Style du formulaire */
+.form-container {
+  width: 60%;
+  height: 400px;
+  padding: 20px;
+  border: 3px solid #C00A27;
+  border-radius: 3px;
+  background-image: url("../RESSOURCES/ajouterbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.headerr {
+  background-color: #C00A27;
+  width: 100%241220;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 3%;
+}
+
+.ligne {
+  margin-top: 4%;
+  border-bottom: 1px solid #f1f1f1;
+  width: 1000px;
+  margin-left: 25%;
+}
+
+form .innav {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-left: 25%;
+
+}
+
+
+
+.icones {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 45%;
+
+
+}
+
+.icones input {
+  margin-left: 300px;
+
+}
+
+.icones input {
+  margin-left: 20px;
+
+}
+
+label {
+  color: white;
+}
+
+.iii {
+  padding-left: 125px;
+}

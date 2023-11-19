@@ -1,0 +1,268 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.titreprom {
+  font-size: 5rem;
+}
+
+.headerr {
+  background-color: #C00A27;
+  width: 1536px;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 3%;
+}
+
+#Logo {
+  width: 153px;
+  height: 49px;
+}
+
+.nav-list {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  column-gap: 20px;
+}
+
+.ligne {
+  margin-top: 4%;
+  border-bottom: 1px solid #f1f1f1;
+  width: 1000px;
+}
+
+form .innav {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+
+
+.nav-link {
+  text-transform: uppercase;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.Acc {
+  background-color: #00A149;
+  padding: 5px 10px;
+  width: 94px;
+  height: 32px;
+  border-radius: 20px;
+}
+
+#Rechercher {
+  margin-right: 50px;
+
+}
+
+/* ----------------------------- NOS PIZZAS ---------------------------------*/
+
+#tnpizz {
+  font-family: 'Racing Sans One', 'Arial Narrow', Arial, sans-serif;
+  color: #C00A27;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.container-nav2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.nav-list-mid {
+  background-color: #ff6f00;
+  /* Couleur de fond du bouton */
+}
+
+.b {
+
+  background-color: transparent;
+  /* Fond transparent */
+  color: rgb(75, 75, 75);
+  /* Couleur du texte */
+  border: 3px solid #ff6f00;
+  /* Bordure solide de 2px */
+  border-color: #ff6f00;
+  /* Couleur de la bordure */
+  padding: 10px 20px;
+  /* Marge intérieure pour l'espacement */
+  border-radius: 35px;
+  /* Bordure arrondie */
+  cursor: pointer;
+  /* Curseur en forme de main au survol */
+  font-weight: bolder;
+  font-size: 1em;
+  margin: 20px;
+}
+
+.icones {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 26px;
+}
+
+label {
+  color: white;
+}
+
+/* ----------------------------- ARTICLES ---------------------------------*/
+
+#possibliities {
+  background-color: #efefef;
+  padding: 60px 0px;
+
+}
+
+.wrapper {
+  width: 70%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 15%;
+
+}
+
+#possibliities article {
+  width: 40%;
+  height: 42%;
+  margin-left: 3%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.overlay {
+  background: #00A149;
+  height: 40%;
+  width: 96%;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-left: 20px;
+}
+
+.Npizz {
+  font-size: 18;
+  font-weight: bolder;
+  color: white;
+  margin-top: 10px;
+
+}
+
+.txtpiuzz {
+  color: white;
+}
+
+.prixpuizz {
+  color: #FFCD02;
+  font-weight: bold;
+}
+
+
+/* ----------------------------- FOOTER ---------------------------------*/
+#SocialMedia {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Snap {
+  background-image: url(../Assets/RS/Snapchat.png);
+  width: 5%;
+  height: 80%;
+  background-size: cover;
+}
+
+.Tweet {
+  background-image: url(../Assets/RS/Twitter.png);
+  width: 5%;
+  height: 80%;
+  background-size: cover;
+}
+
+.YT {
+  background-image: url(../Assets/RS/Youtube.png);
+  width: 5%;
+  height: 80%;
+  background-size: cover;
+}
+
+.Fb {
+  background-image: url(../Assets/RS/Facebook.png);
+  width: 5%;
+  height: 80%;
+  background-size: cover;
+}
+
+.Insta {
+  background-image: url(../Assets/RS/Instagram.png);
+  width: 5%;
+  height: 80%;
+  background-size: cover;
+}
+
+.Tiktok {
+  background-image: url(../Assets/RS/TikTok.png);
+  width: 5%;
+  height: 80%;
+  background-size: cover;
+}
+
+
+/*-----------------*/
+.cb {
+  margin-left: 200px;
+}
+
+.ttt {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#end {
+  height: 400px;
+  width: 100%;
+  background-color: #2C2C2C;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+
+.thinstxt {
+  font-weight: 100;
+  /* ou "lighter" */
+}
